@@ -1,0 +1,47 @@
+:root {
+  /* ---- Surfaces ---- */
+  --bg-void: #0a0b0e;
+  --bg-base: #0d0e13;
+  --bg-panel: #111318;
+  --bg-panel-raised: #15171f;
+  --bg-panel-hover: #191c26;
+  --hairline: rgba(255, 255, 255, 0.07);
+  --hairline-strong: rgba(255, 255, 255, 0.14);
+
+  /* ---- Text ---- */
+  --text-primary: #eef0f5;
+  --text-secondary: #b3b6c4;
+  --text-muted: #767a8c;
+  --text-faint: #4d5163;
+
+  /* ---- Brand accent ---- */
+  --accent: #7f95ae;
+  --accent-bright: #b6c8e1;
+  --accent-dim: #5c6c84;
+  --accent-wash: rgba(182, 200, 225, 0.12);
+  --accent-wash-strong: rgba(182, 200, 225, 0.2);
+
+  /* ---- Dispatch amber (signature secondary — warm utility tone) ---- */
+  --dispatch: #d29a4b;
+  --dispatch-dim: #8a6c38;
+  --dispatch-wash: rgba(210, 154, 75, 0.1);
+
+  /* ---- Status ---- */
+  --status-online: #35d68a;
+  --status-online-wash: rgba(53, 214, 138, 0.12);
+  --status-offline: #ff5d6c;
+
+  /* ---- Type ---- */
+  --font-display: 'Sora', 'Segoe UI', sans-serif;
+  --font-body: 'Manrope', 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono', 'IBM Plex Mono', monospace;
+
+  /* ---- Scale ---- */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+  --container: 1180px;
+
+  /* ---- Motion ---- */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+}

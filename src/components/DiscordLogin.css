@@ -1,0 +1,836 @@
+.steam-login {
+  background: linear-gradient(180deg, rgba(14, 20, 33, 0.98), rgba(10, 14, 22, 0.98));
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 108px 0;
+}
+
+.applications-page__hero {
+  max-width: 980px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.applications-page__hero .eyebrow {
+  display: inline-flex;
+  margin-bottom: 14px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--dispatch);
+}
+
+.applications-page__hero h1 {
+  margin: 0 0 16px;
+  font-size: clamp(36px, 4vw, 52px);
+}
+
+.applications-page__hero p {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 17px;
+  line-height: 1.8;
+}
+
+.steam-login__inner {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.steam-login__topbar {
+  display: grid;
+  place-items: center;
+  gap: 18px;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.steam-login__topbar > * {
+  width: min(100%, 780px);
+}
+
+.steam-login__status-banner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 22px;
+  border-radius: 999px;
+  background: rgba(5, 42, 74, 0.92);
+  border: 1px solid rgba(63, 209, 220, 0.18);
+  color: #f7fcff;
+  font-size: 15px;
+  font-weight: 600;
+  box-shadow: 0 18px 50px -32px rgba(0, 194, 209, 0.34);
+}
+
+.steam-login__status-banner strong {
+  color: #f3b14a;
+}
+
+.steam-login__guest {
+  display: grid;
+  gap: 20px;
+  padding: 30px;
+  border-radius: 28px;
+  background: rgba(15, 24, 41, 0.92);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 24px 60px -38px rgba(0, 0, 0, 0.55);
+}
+
+.steam-login__guest-copy {
+  display: grid;
+  gap: 14px;
+}
+
+.steam-login__guest-label {
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--dispatch);
+}
+
+.steam-login__guest-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(30px, 4vw, 38px);
+  line-height: 1.08;
+}
+
+.steam-login__guest-text {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 16px;
+  line-height: 1.8;
+  max-width: 700px;
+}
+
+.steam-login__button {
+  width: fit-content;
+}
+
+.steam-login__account-inline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 18px;
+  flex-wrap: wrap;
+  padding: 18px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.steam-login__account-inline .steam-login__name {
+  margin: 0 0 4px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.steam-login__account-inline .steam-login__id {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.steam-login__panel {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  padding: 0;
+}
+
+.steam-login__title {
+  font-size: clamp(30px, 4vw, 38px);
+  margin: 18px 0 0;
+}
+
+.steam-login__text {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  max-width: 560px;
+}
+
+.steam-login__button {
+  width: fit-content;
+}
+
+.steam-login__account {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  gap: 18px;
+  padding: 20px;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 22px;
+  background: var(--bg-panel-raised);
+}
+
+.steam-login__avatar--img {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  object-fit: cover;
+  border: 1px solid var(--hairline-strong);
+}
+
+.steam-login__logout {
+  white-space: nowrap;
+}
+
+.steam-login__account-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.steam-login__error {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255, 93, 108, 0.1);
+  border: 1px solid rgba(255, 93, 108, 0.3);
+  color: #ff8f98;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+.steam-login__loading {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: 13px;
+}
+
+.steam-login__name {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.steam-login__id {
+  font-family: var(--font-mono);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.steam-login__status {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--status-online);
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: var(--status-online-wash);
+  width: fit-content;
+}
+
+.steam-login__applications {
+  display: grid;
+  gap: 28px;
+  padding: 16px 0 8px;
+}
+
+.steam-login__applications-head {
+  display: grid;
+  gap: 12px;
+  justify-items: center;
+}
+
+.steam-login__applications-head h3 {
+  margin: 0;
+  font-size: clamp(28px, 3vw, 36px);
+}
+
+.steam-login__applications-head p {
+  margin: 0;
+  color: var(--text-secondary);
+  max-width: 640px;
+}
+
+.steam-login__applications-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.staff-page__hero {
+  padding-bottom: 4px;
+}
+
+.staff-page__hero-card {
+  display: grid;
+  gap: 18px;
+  padding: 34px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(11, 25, 45, 0.94), rgba(9, 19, 34, 0.96));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 32px 80px -48px rgba(0, 0, 0, 0.75);
+}
+
+.staff-page__hero-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.staff-page__hero-meta span {
+  padding: 10px 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.staff-page__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.staff-card {
+  position: relative;
+  display: grid;
+  gap: 22px;
+  padding: 28px;
+  border-radius: 32px;
+  background: linear-gradient(180deg, rgba(22, 28, 39, 0.98), rgba(16, 22, 31, 0.99));
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 28px 52px rgba(0, 0, 0, 0.18);
+  transition: transform 0.28s ease, border-color 0.28s ease, box-shadow 0.28s ease;
+  overflow: hidden;
+}
+
+.staff-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(255, 255, 255, 0.14);
+  box-shadow: 0 38px 72px rgba(0, 0, 0, 0.22);
+}
+
+.staff-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top left, rgba(255, 255, 255, 0.03), transparent 38%);
+}
+
+.staff-card__top {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.staff-card__avatar-wrap {
+  flex-shrink: 0;
+  width: 96px;
+  height: 96px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  display: grid;
+  place-items: center;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03);
+  overflow: hidden;
+}
+
+.staff-card__avatar {
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  opacity: 0;
+  filter: blur(12px) saturate(0.8);
+  transition: opacity 0.45s ease, transform 0.35s ease, filter 0.45s ease;
+}
+
+.staff-card__avatar.is-loaded {
+  opacity: 1;
+  filter: blur(0) saturate(1);
+}
+
+.staff-card__avatar:hover {
+  transform: scale(1.05);
+}
+
+.staff-card__intro {
+  display: grid;
+  gap: 6px;
+}
+
+.staff-card__badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  background: rgba(210, 154, 75, 0.12);
+  color: var(--dispatch);
+  width: fit-content;
+}
+
+.staff-card__name {
+  margin: 0;
+  font-size: 24px;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+}
+
+.staff-card__username {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+.staff-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  padding-top: 10px;
+}
+
+.staff-card__role {
+  margin: 0;
+  color: var(--text-secondary);
+  font-size: 13px;
+}
+
+.staff-card__details {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: #c5c9d8;
+  font-size: 13px;
+}
+
+.staff-card__details code {
+  background: rgba(255, 255, 255, 0.06);
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-family: var(--font-mono);
+}
+
+@media (max-width: 1120px) {
+  .staff-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .staff-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-page__hero-card {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 1120px) {
+  .staff-page__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .staff-page__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .staff-page__hero-card {
+    padding: 24px;
+  }
+}
+
+.application-card {
+  --application-accent: #3fd1dc;
+  --application-accent-soft: rgba(63, 209, 220, 0.15);
+  position: relative;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(7, 15, 30, 0.96), rgba(11, 19, 34, 0.98));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  transition: transform 0.28s var(--ease-out), border-color 0.28s var(--ease-out), box-shadow 0.28s ease;
+  cursor: pointer;
+  box-shadow: 0 28px 80px -48px rgba(0, 0, 0, 0.65);
+  backdrop-filter: blur(14px);
+}
+
+.application-card:hover {
+  transform: translateY(-8px);
+  border-color: var(--application-accent);
+  box-shadow: 0 36px 110px -50px rgba(0, 0, 0, 0.7);
+}
+
+.application-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at top right, var(--application-accent-soft), transparent 22%);
+}
+
+.application-card::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 4px;
+  background: linear-gradient(90deg, transparent, var(--application-accent), transparent);
+}
+
+.application-card--selected {
+  border-color: var(--application-accent);
+  box-shadow: 0 42px 110px -52px rgba(243, 177, 74, 0.35);
+}
+
+.application-card--closed {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.application-card--closed .application-card__content,
+.application-card--closed .application-card__footer {
+  opacity: 0.8;
+}
+
+.application-card__status-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  background: rgba(10, 10, 12, 0.75);
+  pointer-events: none;
+}
+
+.application-card__media {
+  min-height: 180px;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(18, 29, 44, 0.72);
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.application-card:hover .application-card__media {
+  transform: scale(1.04);
+  filter: brightness(1.05) saturate(1.05);
+}
+
+.application-card__content {
+  padding: 28px 28px 16px;
+}
+
+.application-card__label {
+  display: inline-flex;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent-bright);
+  background: rgba(63, 209, 220, 0.08);
+  padding: 10px 14px;
+  border-radius: 999px;
+}
+
+.application-card__title {
+  margin: 18px 0 12px;
+  font-size: clamp(22px, 2vw, 26px);
+  line-height: 1.1;
+}
+
+.application-card__description {
+  color: var(--text-secondary);
+  line-height: 1.75;
+  min-height: 3.5em;
+}
+
+.application-card__meta {
+  margin-top: 14px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.application-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 24px 24px;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.application-card__cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  background: rgba(63, 209, 220, 0.16);
+  color: #d5f7ff;
+  font-family: var(--font-mono);
+  font-size: 12px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  box-shadow: inset 0 0 0 1px rgba(63, 209, 220, 0.08);
+  background: linear-gradient(180deg, var(--application-accent-soft), rgba(255,255,255,0.05));
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.application-card__pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #b9c6d4;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.application-card__pick {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.application-card__pick {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.steam-login__form-panel {
+  position: relative;
+  --application-accent: #3fd1dc;
+  --application-accent-soft: rgba(63, 209, 220, 0.12);
+  padding: 28px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, rgba(16, 26, 43, 0.84), rgba(12, 19, 30, 0.94));
+  border: 1px solid var(--application-accent-soft);
+  display: grid;
+  gap: 22px;
+  box-shadow: 0 30px 75px -48px rgba(0, 0, 0, 0.78);
+}
+
+.steam-login__form-panel::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 28px;
+  pointer-events: none;
+  background: radial-gradient(circle at top left, var(--application-accent-soft), transparent 28%);
+}
+
+.steam-login__form-panel::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 5px;
+  background: linear-gradient(90deg, transparent, var(--application-accent), transparent);
+  pointer-events: none;
+}
+
+.steam-login__form-head {
+  position: relative;
+  z-index: 1;
+}
+
+.steam-login__form-badge {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--dispatch);
+  margin: 0 0 8px;
+}
+
+.steam-login__form-head {
+  display: grid;
+  gap: 10px;
+}
+
+.steam-login__form-head h4 {
+  margin: 0;
+  font-size: clamp(24px, 3vw, 30px);
+}
+
+.steam-login__form-head p {
+  margin: 0;
+  color: var(--text-secondary);
+}
+
+.steam-login__form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.steam-login__field {
+  display: grid;
+  gap: 8px;
+}
+
+.steam-login__field span,
+.steam-login__field legend {
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.steam-login__field input,
+.steam-login__field textarea,
+.steam-login__field select {
+  width: 100%;
+  border: 1px solid var(--hairline-strong);
+  border-radius: 12px;
+  background-color: rgba(9, 17, 30, 0.84);
+  color: var(--text-primary);
+  padding: 12px 13px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+}
+
+.steam-login__field input:focus,
+.steam-login__field textarea:focus,
+.steam-login__field select:focus {
+  outline: none;
+  border-color: var(--accent-bright);
+  background: rgba(9, 17, 30, 1);
+}
+
+.steam-login__field textarea {
+  resize: vertical;
+}
+
+.steam-login__field select {
+  appearance: none;
+  padding: 12px 42px 12px 13px;
+  background-color: rgba(9, 17, 30, 0.88);
+  border-color: var(--hairline-strong);
+}
+
+.steam-login__field select::-ms-expand {
+  display: none;
+}
+
+.steam-login__field--chips {
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 9px;
+}
+
+.steam-login__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.steam-login__chip {
+  border-radius: 999px;
+  border: 1px solid var(--hairline-strong);
+  padding: 8px 12px;
+  font-size: 12px;
+  color: var(--text-secondary);
+  cursor: pointer;
+}
+
+.steam-login__chip input {
+  display: none;
+}
+
+.steam-login__chip--active {
+  border-color: rgba(243, 177, 74, 0.6);
+  color: #ffe2b5;
+  background: rgba(243, 177, 74, 0.14);
+}
+
+.steam-login__success {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: 1px solid rgba(66, 196, 141, 0.45);
+  background: rgba(66, 196, 141, 0.14);
+  color: #95efc2;
+  font-size: 13px;
+}
+
+.steam-login__form-actions {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.steam-login__form-panel .btn[disabled] {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1120px) {
+  .steam-login__inner,
+  .steam-login__applications-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 760px) {
+  .steam-login__form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 720px) {
+  .steam-login {
+    padding: 72px 0;
+  }
+}
+
+@media (max-width: 680px) {
+  .steam-login__panel,
+  .application-card,
+  .steam-login__form-panel {
+    padding: 22px;
+  }
+}
+
+@media (max-width: 520px) {
+  .steam-login__account {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
